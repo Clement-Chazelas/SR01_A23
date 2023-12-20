@@ -9,7 +9,7 @@ A remettre pour   25 octobre 2023
 - Les différents binômes devront remettre un seul fichier **\*.zip** contenant les codes sources ainsi qu’un rapport électronique (pdf) de quelques pages.
 - Le dernier délai pour la remise est fixé pour le **25 octobre 2023**. 
 
-## **Exercice 1** 
+## Exercice 1
 
 Pour chacun de ces programmes, exécuter le programme et donner une explication du resultat obtenu:
 
