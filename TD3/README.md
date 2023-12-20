@@ -141,43 +141,9 @@ int main()
 
 ## Exercice4: Expressions et conversions  
 
-En se basant sur le tableau suivant de priorité des opérateurs,
+En se basant sur le tableau de priorité des opérateurs,
 Essayer de trouver le résultat des printf(), avant de compiler et d'executer les programmes ci-dessous.  
 
-Priorité
-Opérateur
-16
-15
-14
-13
-12
-11
-10
-9
-8
-7
-6
-5
-4
-3
-2
-1
-( )  [ ]  .  -> ++  --  (postfixé: i++ i--)
-!   ~  ++  --  (préfixé  ++i  --i)   +  -  (unaire -3)  *  (indirection) & (adresse de) sizeof()
-conversion
-* (multiplication)  /   %
- +   -  
-<<  >>
-<  <=   >    >=
- = =    !=
- & (ET bit à bit)
-  ^
-   |
- &&
-  | |
- ?:
- =  +=  -=  *=  /=  %=  <<=  >>=  &=  ^=  |=
-, 
 
   int main(void)  
   {  
