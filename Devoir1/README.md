@@ -9,7 +9,7 @@ A remettre pour   25 octobre 2023
 - Les différents binômes devront remettre un seul fichier **\*.zip** contenant les codes sources ainsi qu’un rapport électronique (pdf) de quelques pages.
 - Le dernier délai pour la remise est fixé pour le **25 octobre 2023**. 
 
-## **1  Exercice 1** 
+## **Exercice 1** 
 
 Pour chacun de ces programmes, exécuter le programme et donner une explication du resultat obtenu:
 
@@ -25,7 +25,7 @@ printf  ( "A=%d  B=%d  c=%d  \n" ,  A, B, C);
   
 #### **Programme 2**
  
-include  < stdio. h>
+#include  < stdio. h>
 int  main (){ 
 int  A=20,   B=5,   C=-10,  D=2; 
 printf  ( "%d  \n" ,  A&&B ||!0&&  C++&&!D++);  
@@ -67,14 +67,14 @@ printf  ( "a=%d  b=%d  c=%d\n" , a, b, c);
 
 #### **Programme 6**
 
-include  <stdio. h> ![](Aspose.Words.8f799285-3dbb-4658-81e6-a7fff38f0cf2.010.png)
+include  <stdio. h>
 int  main (){ 
 int    a=-8  ,  b  =3; 4  a     >    >=2^ b; 
 printf  ( "a=%d\n" , a); 
 }
 
 
-### **2  Exercice 2** 
+### **Exercice 2** 
 
 1. Écrire un programme qui lit les notes de  *N* étudiants de l’UTC dans un devoir de l’UV SR01 et les mémorise dans un tableau POINTS de dimension *N* . 
 1. Écrire des programmes pour rechercher et afficher :
@@ -95,7 +95,7 @@ printf  ( "a=%d\n" , a);
 
 
 
-### **3  Exercice 3** 
+### **Exercice 3** 
 
 L’objectif de cet exercice est de collecter un ensemble de données relatives à des restaurants et  de  les  manipuler  par  la  suite.  Les  informations  concernant  chaque  restaurant  sont stockées dans un fichier (restau.txt) selon le format donné dans la figure 2.
 
