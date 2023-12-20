@@ -1,0 +1,96 @@
+Exercice 1
+
+1/ whoami
+
+2/ id Malena
+
+3/ who
+
+4/ tty
+
+
+Exercice 2
+
+1/ cat /etc/passwd
+
+2/ cat /etc/group
+
+3/ sudo su
+
+4/ mkdir Sauvegarde
+   cp /etc/group /etc/passwd /etc/shadow /etc/gshadow Sauvegarde/
+
+5/ groupadd -g 1025 LINUX
+   groupadd -g 1026 WINDOWS
+   groupadd -g 1027 GroupeD
+   groupadd -g 1028 GroupeV
+
+   useradd -u 2022 -g 1025 -d /home/linux/antoine -m -s /bin/sh antoine
+   useradd -u 2023 -g 1025 -d /home/linux/xavier -m -s /bin/sh xavier
+   useradd -u 2024 -g 1026 -d /home/windows/vincent -m -s /bin/sh vincent
+   useradd -u 2025 -g 1026 -d /home/windows/malena -m -s /bin/sh malena
+
+   (On met m au cas où, ceinture et bretelles =) )
+
+6/ passwd antoine
+   passwd xavier
+   passwd vincent
+   passwd malena
+
+7/ chage -M 60 -m 45 -W 5 -I 10 -E 365 malena
+
+
+Exercice 3
+
+1/ touch emptyfile
+   chmod 4 emptyfile
+   chmod 44 emptyfile
+
+chmod lit la valeur numérique chiffre par chiffre, elle ne doit pas dépasser 3 chiffres. Chaque chiffre est associé à une permission pour un des trois "type" : user, group, others
+
+2/ Oui, on peut exécuter un fichier si on a des permissions d'exécution même sans lecture. Cependant, on ne pourra pas voir le contenu du fichier sans la permission de lecture. (Ca ne marchera pas puisque pour éxecuter un fichier il faut l'ouvrir afin de lire les fonctions qu'il y a dedans)
+
+3/ Sticky bit (on peut voir le t) --> seul le propriétaire du fichier peut le supprimer, même s'il est situé dans un répertoire partagé 
+   Un utilisateur lambda peut tout de même supprimer ses propre fichiers 
+
+4/ 'u-x' --> on a retiré la permission d'exécution pour le propriétaire 
+   'S' --> le bit SUID est activé et l'exécution est autorisée pour le groupe
+
+
+Exercice 4 
+
+1/ useradd -m dave
+   cette commande ajoute un utilisateur et lui crée un répertoire personnel s'il n'en a pas déjà un. On utlise les fichiers de rép_squelette et tous
+   les répertoires contenus dans rép_squelette ou dans /etc/skel seront également créés dans le répertoire personnel de l'utilisateur
+
+2/ Non, faut lui mettre un mdp
+
+3/id dave 
+
+4/ groupadd sys_admin
+   groupadd web_admin
+   groupadd db_admin
+
+   less /etc/group et on cherche (pas le plus opti mais ça marche)
+
+5/ useradd -u 1035 -g sys_admin -G web_admin,db_admin -m carol
+
+6/ userdel
+   groupdel
+
+7/ On obtient la sortie suivante :
+
+   -rw-r--r-- 1 root root   1363 Dec 19 11:21 /etc/group
+   -rw-r----- 1 root shadow 1127 Dec 19 11:21 /etc/gshadow
+   -rw-r--r-- 1 root root   3419 Dec 19 11:21 /etc/passwd
+   -rw-r----- 1 root shadow 1835 Dec 19 11:21 /etc/shadow
+
+   les fichiers shadowed sont le deuxième et le dernier
+
+8/ ls -l /usr/bin/passwd
+
+   On obtient la sortie suivante :
+   -rwsr-xr-x 1 root root 72424 Mar  3  2022 /usr/bin/passwd
+
+    Le bit SUID est activé --> le programme s'exécute avec les permissions du propriétaire du fichier (en général root)
+
