@@ -44,6 +44,7 @@ On fera écrire au process parent :
 ici le parent, mon pid est nnn, le pid de mon fils est nnn  
 Et au process fils :  
 ici le fils, mon pid est nnn, le pid de mon père nnn.  
+
 2) Créer un programme "f2.c" qui crée deux fils (tous deux fils du même père). On fera écrire à chaque process les mêmes informations que f1.c.  
 
 3) Faites cp f1.c f3.c  
@@ -75,9 +76,11 @@ On aura :
       fop.in                   fop.out  
       ligne_1 aaa bbb          ligne_1 aaa bbbxxx  
       ligne_2 dd ee            ligne_2 dd eexxx  
+
       
-Exercice5: E/S haut niveau [ freopen() ]
-En utilisant freopen(), écrire un programme freop.c qui va successivement :
-écrire des lignes sur l'écran avec un printf(),
-rediriger stdout,
-écrire les lignes suivantes �crites avec des printf() dans le fichier freop.log
+## Exercice5: E/S haut niveau [ freopen() ]  
+
+En utilisant freopen(), écrire un programme freop.c qui va successivement :  
+écrire des lignes sur l'écran avec un printf(),  
+rediriger stdout,  
+écrire les lignes suivantes �crites avec des printf() dans le fichier freop.log  
