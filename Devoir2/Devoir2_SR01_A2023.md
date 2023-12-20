@@ -1,6 +1,5 @@
-﻿![](Aspose.Words.b5f78e6f-c0d7-4c1e-89bd-29219fea21c7.001.jpeg)
 
-Devoir 2 SR01 
+# Devoir 2 SR01 
 
 - Ce devoir doit se faire en binôme. Les deux étudiants formant un binôme doivent appartenir au même groupe de TD.  
 - Les  différents  binômes  devront  remettre  un  seul  fichier NomPrenom1NomPrenom2.zip contenant les codes sources ainsi qu’un rapport électronique (pdf) de quelques pages.  
@@ -10,7 +9,7 @@ Devoir 2 SR01
 - Un rapport détaillant le devoir doit être rédigé. 
 - Le dernier délai pour la remise des TP est fixé pour le 18 décembre 2023. 
 
-Exercice 1 : 
+## Exercice 1 : 
 
 1/ Soit l’instruction C suivante :   
 
@@ -22,7 +21,7 @@ Dites combien de processus seront crées suite à l’exécution de l’instruct
 
 3/ Créer un fichier zombie.c dans lequel un processus enfant sera créé et se mettra en sommeil pendant une minute. Le processus enfant, lui, affiche un message et exécute l’appel système.  
 
-Exercice 2 : 
+## Exercice 2 : 
 
 Dans cet exercice l’objectif est de faire communiquer un processus fils avec son processus père. Le processus fils doit écrire un entier dans un fichier, puis le processus père doit récupèrer cet entier en le lisant dans le fichier.   
 
@@ -38,7 +37,7 @@ nb dans le fichier de nom name. Il faut donc ouvrir le fichier, écrire l’enti
 
 5/ Modifier le programme précédent en utilisant cette fois-ci le mécanisme de signaux, de façon à ce que le deuxième fils écrive un entier nb2 dans le fichier name2, ensuite le premier fils écrive un entier nb1 dans le fichier name1. Puis le père lit les valeurs nb1 et nb2 écrites par ses fils. 
 
-Exercice 3 : 
+## Exercice 3 : 
 
 L’intérêt d’une exécution en parallèle est de diviser une grosse tâche en plusieurs petites tâches. Dans cette partie nous allons réaliser un programme qui cherche l’élément maximum d’un très grand tableau en utilisant plusieurs processus.   
 
@@ -51,4 +50,4 @@ Les processus fils communiquent le résultat de leur recherche à leur père en 
 2/ Ecrire la fonction int max(int\* tab, int debut, int fin) qui retourne le maximum des éléments du tableau tab compris entre les indices debut et fin.   
 
 3/ Créer un programme qui aide à trouver l’élément maximum d’un tableau en suivant la procédure décrite dans l’introduction de l’exercice 3.   
-3  
+
