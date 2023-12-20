@@ -177,7 +177,7 @@ voici le resultat de l'appel de  afficher_allumettes(10);
  | | | | | | | | | |  
 
 
-##Ex5 : jeu de la vie  ex5.c  
+## Ex5 : jeu de la vie  ex5.c  
 
 Le Jeu de la vie est l'exemple le plus connu d'automate cellulaire. Ce jeu, décrit en 1970 par le mathématicien John Conway
 de l'université de Cambridge, vise à modéliser d'une fa�on simple l'évolution d'organismes vivants.  
