@@ -41,7 +41,6 @@ Ex2a.c : A l'aide de plusieurs boucles for() imbriquées, réaliser le dessin d'
  *****************  
 
 *******************  
-
        ||||  
 
        ||||  
