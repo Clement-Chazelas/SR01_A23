@@ -16,6 +16,7 @@ Pour chacun de ces programmes, exécuter le programme et donner une explication 
 #### **Programme 1**
 
 #include  <stdio. h> 
+
 int  main (){ 
 
 int  A=20,   B =5; 
@@ -30,21 +31,26 @@ printf  ( "A=%d  B=%d  c=%d  \n" ,  A, B, C);
 #### **Programme 2**
  
 #include  < stdio. h>
+
 int  main (){ 
-int  A=20,   B=5,   C=-10,  D=2; 
+
+int  A=20,   B=5,   C=-10,  D=2;
+
 printf  ( "%d  \n" ,  A&&B ||!0&&  C++&&!D++);  
+
 printf  ( "c=%d  d=%d  \n" ,  C,  D); 
+
 }
 
 
 #### **Programme 3**
 
-#include  < stdio. h>
-int  main (){ 
-int  p [4]={1, -2, 3, 4}; 
-int  \* q=p; 
-printf  ( "c=%d\n" ,  \*++  q\*\* q ++);  6  printf  ( "c=%d  \n"  ,\* q); 
-}
+#include  < stdio. h>  
+int  main (){  
+int  p [4]={1, -2, 3, 4};  
+int  \* q=p;  
+printf  ( "c=%d\n" ,  \*++  q\*\* q ++);  6  printf  ( "c=%d  \n"  ,\* q);  
+}  
 
 
 #### **Programme 4**
